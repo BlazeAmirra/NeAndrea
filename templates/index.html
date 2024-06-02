@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS file - must be in static folder -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    <title>home</title>
+</head>
+<body>
+    <nav>
+    <p>Welcome to my website were you can learn about me, my projects, and much more</p>
+    <li><a href="{{ url_for('home_page') }}">Home</a></li>
+    <li><a href="{{ url_for('Acomplishments') }}">Acomplishments</a></li>
+    <li><a href="{{ url_for('Objectives') }}">Objectives</a></li>
+    <li><a href="{{ url_for('Portfolio') }}">Portfolio</a></li>
+    <li><a href="{{ url_for('SIP') }}">SIP</a></li>
+    </nav>
+</body>
+</html>
